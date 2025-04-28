@@ -1,0 +1,529 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=League+Spartan:wght@100..900&family=Mona+Sans:ital,wdth,wght@0,75..125,200..900;1,75..125,200..900&display=swap');
+
+@font-face {
+  font-family: 'Geologica';
+  src: url('./GeologicaVF.ttf') format('truetype');
+  font-style: normal;
+}
+/* FONTS END */
+/* ANGLE FOR CONIC GRADIENTS */
+@property --bg-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: "<angle>";
+}
+/* VARIABLES */
+:root{
+  --bg-color:  rgba(250,250,250,0.75);
+  --border-color: rgba(0,0,0,0.55);
+  --text-color: #333333;
+  --header-text: #aaaaaa;
+  --header-bg: #222222;
+  --table-border: #333333;
+  --box-shadow: -8px 5px 10px rgba(0, 0, 0, 0.4);
+  --small-shadow: -4px 4px 8px rgba(0,0,0,0.6);
+  --options-bg-color: #9999b4aa;
+  --hidden-cell: none;
+  --font-settings: table-cell;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg-color:  rgba(5,5,5,0.75);
+    --border-color: rgba(205,205,205,0.55);
+    --text-color: #ffffff;
+    --header-bg: #222222;
+    --header-text: #aaaaaa;
+    --table-border: #333333;
+    --box-shadow: -8px 5px 10px rgba(190, 190, 190, 0.4);
+    --small-shadow: -4px 4px 8px rgba(190,190,190,0.6);
+    --options-bg-color: #9999b4aa;
+    --hidden-cell: none;
+    --font-settings: table-cell;
+  }
+}
+/* VARIABLES END */
+/* GLOBAL STYLES */
+* {
+  font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: 1.25vmax;
+  color: white;
+}
+html{
+  padding: 2vmax;
+}
+body{
+  background-color: var(--bg-color);
+  margin: 0.05vmax;
+  padding: 0.5vmax 2.5vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 250px;
+  border: 15px solid var(--border-color);
+  min-height: 75vh;
+  height: fit-content;
+  width: fit-content;
+  max-width: 90vw;
+  box-shadow: var(--box-shadow);
+}
+/* TITLE OF PAGE */
+#header{
+  position: relative;
+  margin-bottom: 120px;
+}
+h1, h2, h3, h4 {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 1,
+    "SHRP" 100;
+  text-align: center;
+  width: 100%;
+}
+#header h2{
+  font-size: 2.5vw;
+  margin: 4px;
+  color: var(--text-color);
+}
+#header h3{
+  font-weight: 500;
+  font-style: normal;
+  font-size: 5.5vw;
+  color: var(--text-color);
+}
+.title{
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 1,
+    "SHRP" 100;
+  font-weight: 900;
+  font-size: 6vmax;
+  /* background: conic-gradient( from var(--bg-angle) at 49% 5% in hsl longer hue, red, blue, red); */
+
+background: conic-gradient(from  var(--bg-angle) at 50% 50%, #00ffff, #3108ff, #ff0faf, #ff1327, #ff8b17, #ecff1b, #69ff1e, #26ffdb);
+  color: dimgrey;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 15px transparent;
+  margin-bottom: 0px;
+  -moz-animation: rainbowAnimation 12s infinite linear forwards;
+  -webkit-animation: rainbowAnimation 12s infinite linear forwards;
+  animation: rainbowAnimation 12s infinite linear forwards;
+  margin:0;
+  width: fit-content;
+  letter-spacing: 3px;
+  padding: 0 10px;
+}
+.heading{
+  color: var(--text-color);
+  font-weight: 750;
+  font-size: 5.5vmax;
+  text-align: center;
+  margin: 0;
+}
+.logo{
+  width: 250px;
+  position: absolute;
+  z-index: -99;
+  opacity: 0.8;
+  top:150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* TITLE END */
+
+/* MAIN SECTION */
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.btnRow{
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+}
+.intro{
+  width: 65%;
+}
+.subheading{
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 650;
+  font-style: normal;
+  font-size: 4.5vmax;
+  margin-bottom: 0;
+  color: transparent;
+  background: linear-gradient(135deg, var(--header-bg) 0%, grey 35%, var(--header-text) 50%, white 60%, darkGrey 80%);
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  /* width: fit-content; */
+}
+.text{
+  font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.75vmax;
+  font-variation-settings:
+    "wdth" 110;
+  color: var(--text-color);
+}
+.gradient{
+  font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.95vmax;
+  font-variation-settings:
+    "wdth" 110;
+  color: var(--text-color);
+  letter-spacing: 2px;
+}
+
+/* OPTIONS SECTION */
+.options{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  width: 35%;
+}
+.radios, .opacityContainer{
+  background-color: var(--options-bg-color);
+  border-radius: 15px;
+  padding: 5px;
+  margin: 15px;
+  box-shadow: var(--small-shadow);
+  height: fit-content;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#colorTitle, #opacityTitle{
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 2.5vmax;
+}
+#colorBtns{
+  display: flex;
+  width: 75%;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1.5vw;
+}
+.col label, h4{
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.75vmax;
+  color: var(--text-color);
+}
+.col input{
+  margin:-5px;
+  margin-top: -20px
+}
+.col label{
+  margin-top: 15px;
+}
+
+.slider {
+  height: 1vh;
+  opacity: 0.8;
+  -webkit-transition: .2s; 
+  transition: opacity .2s;
+  width: 75%;
+  min-width: 100px;
+  margin-bottom: 15px;
+}
+
+.slider:hover {
+  opacity: 1; 
+  cursor: pointer;
+}
+/* END OF OPTIONS */
+
+/* TABLE CSS */
+table{
+  width:100%;
+  height: fit-content;
+  margin-bottom: 2.5vh;
+  border: 2px solid var(--table-border);
+  border-radius: 25px;
+  background: var(--bg-color);
+  box-shadow: var(--small-shadow);
+  overflow-x: scroll;
+}
+thead{            
+  background-color: var(--header-bg);
+  padding: 20px;
+  height: 40px;
+}
+th{
+  padding: 20px;
+  font-weight: 570;
+  font-family: "Geologica", sans-serif;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 1,
+    "SHRP" 100;
+  white-space: nowrap;
+  font-size: 2.5vmin;
+  color: transparent;
+  background: linear-gradient(75deg,var(--header-text), white 80%);
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+}
+th:nth-child(1){
+  border-top-left-radius: 25px;
+  background-color: #222222;
+}
+th:last-child{
+  border-top-right-radius: 25px;
+}
+tr:nth-child(31) td:nth-child(1){
+  border-bottom-left-radius: 25px;
+}
+tr:nth-child(31) td:last-child{
+  border-bottom-right-radius: 25px;
+}
+tr td:nth-child(1){
+  border-right:3px solid var(--bg-color);
+}
+td{
+  height: 60px;
+  font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 110;
+  font-weight: 300;
+  text-align: center;
+  border-color: var(--bg-color);
+}
+#colorTable td:hover{
+  font-weight:600;
+}
+/*  END OF TABLE  */
+/* END OF COLOR SECTION */
+
+
+/* FONTS */
+#fontTable td:first-child{
+  min-width:400px
+}
+.tableScale{
+  transform: scale(0.7);
+}
+
+.fontSettings{
+  display: var(--font-settings);
+}
+.hiddenCell{
+  display: var(--hidden-cell);
+}
+.typeFace{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.font-family{
+  font-size: 3vmin;
+  font-weight:500;
+}
+#geo td ul li{
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto; 
+  font-style: normal; 
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 1,
+    "SHRP" 100;
+  color: var(--text-color);
+  margin-left: -35px;
+  list-style-position: inside;
+}
+.spartanTitle{
+  color: var(--text-color);
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 2.75vmax;
+  animation: fontGrower 22s infinite linear forwards;
+  -moz-animation: fontGrower 22s infinite linear forwards;
+  -webkit-animation: fontGrower 22s infinite linear forwards; 
+}
+#league td ul{
+  list-style-position: inside;
+  white-space: nowrap;
+}
+#mona td ul{
+  list-style-position: inside;
+  white-space: nowrap;
+}
+.fontTitle{
+  font-family: "Geologica", sans-serif;
+  font-size: 2.75vmax;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 1,
+    "SHRP" 100;
+  color: var(--text-color); 
+  animation: fontGrower 22s infinite linear forwards;
+  -moz-animation: fontGrower 22s infinite linear forwards;
+  -webkit-animation: fontGrower 22s infinite linear forwards; 
+}
+.monaTitle{
+  font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 2.75vmax;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 110;
+  color: var(--text-color);
+  animation: fontGrower 22s infinite linear forwards;
+  -moz-animation: fontGrower 22s infinite linear forwards;
+  -webkit-animation: fontGrower 22s infinite linear forwards; 
+}
+#league li{
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--text-color)
+}
+
+#mona td, #mona td ul li{
+  font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 110;
+  color: var(--text-color);
+}
+/* END OF FONTS */
+
+/* TEXT STYLES SECTION */
+#textStyles{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+#stylesTitle{
+  display: flex;
+  margin-bottom:-20px;
+}
+#stylesBtn{
+  height: fit-content;
+  width: fit-content;
+  white-space: nowrap;
+  color: var(--header-bg);
+  font-weight: 700;
+  font-size: 2vmax;
+  margin: 2.5vmax;
+  padding: 10px 15px;
+  border-radius: 25px;
+  box-shadow: var(--small-shadow);
+}
+#stylesBtn:hover{
+  background-color: white;
+  box-shadow: var(--box-shadow);
+}
+#stylesBtn:active{
+  background-color: white;
+  transform: scale(1.1);
+  box-shadow: none;
+}
+
+#textTable{
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+#textTable td ul li{
+  font-size: 22px
+}
+
+/* END OF TEXT STYLES SECTION */
+
+
+/* ANIMATIONS */
+@keyframes rainbowAnimation {
+  to {
+    --bg-angle: 360deg;
+  }
+}
+@-moz-keyframes rainbowAnimation {
+  to {
+    --bg-angle: 360deg;
+  }
+}
+@-webkit-keyframes rainbowAnimation {
+  to {
+    --bg-angle: 360deg;
+  }
+}
+
+
+@keyframes fontGrower {
+  0%,100% {
+    font-weight: 100;
+  }
+  50%{
+    font-weight: 900;
+  }
+}
+@-moz-keyframes fontGrower {
+  0%,100% {
+    font-weight: 100;
+  }
+  50%{
+    font-weight: 900;
+  }
+}
+@-webkit-keyframes fontGrower {
+  0%,100% {
+    font-weight: 100;
+  }
+  50%{
+    font-weight: 900;
+  }
+}
+
+@media screen and (max-width:1800px) {
+  .title {
+  -webkit-text-stroke: 10px transparent;
+  }
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./resources/css/index.css" />
+    <title>Website Style Guide</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>
+        <span class="title">Website</span>
+        <span class="title">Style</span>
+        <span class="title">Guide</span>
+      </h1>
+      <h2 class="heading">For Codecademy Full-Stack Developer Course</h2>
+      <h3 class="heading">- By Nathan John -</h3>
+      <a href="https://www.njtd.xyz" target="_blank"><img class="logo" alt="NJTD Logo" src="./resources/images/logo.rainbow.png" /></a>
+    </header>
+    <main>
+      <section id="colors">
+        <div class="btnRow">
+          <div class="intro">
+            <h3 class="subheading">Colors</h3>
+            <p class=text> This chart has been created with data created by myself, and enhanced with generative AI from Microsoft's Copilot. Clicking on any color from the chart will copy that color to the clipboard in whichever format is currently displaying.</p>
+            <p class="text">
+              To change the format of the colors, use the first box to the right. The second box will adjust the opacity of the colors which will be reflected in the colors output in the table.
+            </p>
+          </div>
+          <div class="options">
+            <div class="radios">
+              <h4 id="colorTitle">Color System:</h4>
+              <div id="colorBtns">
+                <div class="col">
+                  <input type="radio" id="hex" name="colorFormat" value="hex" />
+                  <label for="hex">#hexadecimal</label>
+                </div>
+                <div class="col">
+                  <input type="radio" id="rgba" name="colorFormat" value="rgb" />
+                  <label for="rgba">rgba()</label>
+                </div>
+                <!-- <div class="col">
+                  <input type="radio" id="hsla" name="colorFormat" value="hsla" />
+                  <label for="hsla">hsla()</label>
+                </div> -->
+              </div> <!-- colorBtns-->
+            </div> <!-- radios-->
+            <div class="opacityContainer" id="opacity">
+              <h4 id="opacityTitle">Opacity: </h4>
+              <input type="range" min="0" max="10" value="10" class="slider" id="myRange">
+            </div>
+          </div>
+        </div>
+        <table id="colorTable">
+          <thead>
+            <tr id="headings">
+              <th colspan="2">Main Colour</th>
+              <th colspan="6">Light to Dark</th>
+              <th colspan="3">Complimentary Colours</th>
+              <th colspan="3">Contrasting Colours</th>
+              <th>Shadow</th>
+              <th>Highlight</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+          </tbody>
+        </table>
+      </section>
+      <section id="fonts">
+        <h3 class="subheading">Fonts</h3>
+        <table id="fontTable">
+          <thead>
+            <tr id="headings">
+              <th>Font-Family</th>
+              <th>CSS Options</th>
+              <th>Font-Variation<br>-Settings</th>
+              <th colspan="2">Font-Weight</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <tr id="geo">
+              <td class="fontTitle">
+                Geologica
+              </td>
+              <td>
+                <ul>
+                  <li>font-optical-sizing<span style="font-family: League Spartan">:</span> auto<span style="font-family: League Spartan">;</span></li>
+                  <li>font-style<span style="font-family: League Spartan">:</span> normal<span style="font-family: League Spartan">;</span></li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><span style="font-family: League Spartan">"</span>slnt<span style="font-family: League Spartan">"</span> 0 - 100</li>
+                  <li><span style="font-family: League Spartan">"</span>CRSV<span style="font-family: League Spartan">"</span> 0 / 0.5 / 1</li>
+                  <li><span style="font-family: League Spartan">"</span>SHRP<span style="font-family: League Spartan">"</span> 0 - 100</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li style="font-weight:100;white-space:nowrap">100 - Thin</li>
+                  <li style="font-weight:200;white-space:nowrap">200 - Extra Light</li>
+                  <li style="font-weight:300;white-space:nowrap">300 - Light</li>
+                  <li style="font-weight:400;white-space:nowrap">400 - Regular</li>
+                  <li style="font-weight:500;white-space:nowrap">500 - Medium</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li style="font-weight:600;white-space:nowrap">600 - Semi Bold</li>
+                  <li style="font-weight:700;white-space:nowrap">700 - Bold</li>
+                  <li style="font-weight:800;white-space:nowrap">800 - Extra Bold</li>
+                  <li style="font-weight:900;white-space:nowrap">900 - Black</li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="league">
+              <td class="spartanTitle">
+                League Spartan
+              </td>
+              <td>
+                <ul>
+                  <li>font-optical-sizing: auto;</li>
+                  <li>font-style: normal;</li>
+                </ul>
+              </td>
+              <td>
+              </td>
+              <td>
+                <ul>
+                  <li style="font-weight:100;white-space:nowrap">100 - Thin</li>
+                  <li style="font-weight:200;white-space:nowrap">200 - Extra Light</li>
+                  <li style="font-weight:300;white-space:nowrap">300 - Light</li>
+                  <li style="font-weight:400;white-space:nowrap">400 - Regular</li>
+                  <li style="font-weight:500;white-space:nowrap">500 - Medium</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li style="font-weight:600;white-space:nowrap">600 - Semi Bold</li>
+                  <li style="font-weight:700;white-space:nowrap">700 - Bold</li>
+                  <li style="font-weight:800;white-space:nowrap">800 - Extra Bold</li>
+                  <li style="font-weight:900;white-space:nowrap">900 - Black</li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="mona">
+              <td class="monaTitle">
+                Mona Sans
+              </td>
+              <td>
+                <ul>
+                  <li>font-optical-sizing: auto;</li>
+                  <li>font-style: normal;</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>"wdth" 75 - 125,</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li style="font-weight:200;white-space:nowrap">200 - Extra Light</li>
+                  <li style="font-weight:300;white-space:nowrap">300 - Light</li>
+                  <li style="font-weight:400;white-space:nowrap">400 - Regular</li>
+                  <li style="font-weight:500;white-space:nowrap">500 - Medium</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li style="font-weight:600;white-space:nowrap">600 - Semi Bold</li>
+                  <li style="font-weight:700;white-space:nowrap">700 - Bold</li>
+                  <li style="font-weight:800;white-space:nowrap">800 - Extra Bold</li>
+                  <li style="font-weight:900;white-space:nowrap">900 - Black</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="textStyles">
+        <div id="stylesTitle">
+          <h3 class="subheading">Text-Styles</h3>
+          <button id="stylesBtn">Show Gradients</button>
+        </div>
+        <table class="tableScale" id="textTable">
+          <thead>
+            <tr id="headings">
+              <th>Style/Class</th>
+              <th>Element</th>
+              <th>Font-Family</th>
+              <th>Font-Size</th>
+              <th>Font-Weight</th>
+              <th class="fontSettings">Font-Variation<br>-Settings</th>
+              <th class="hiddenCell">Gradient Used</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <tr>
+              <td class="title tableScale">
+                Title
+              </td>
+              <td class="title tableScale">
+                &lt;h1&gt;
+              </td>
+              <td class="title tableScale">
+                Geologica
+              </td>
+              <td class="title tableScale">
+                6vmax
+              </td>
+              <td class="title tableScale" style="font-weight: 900">
+                900
+              </td>
+              <td class="fontSettings">
+                <ul style="margin-left:-50px">
+                  <li style="color: var(--text-color); list-style-position: inside;"><span style="font-family: League Spartan">"</span>slnt<span style="font-family: League Spartan">"</span> 0</li>
+                  <li style="color: var(--text-color); list-style-position: inside;"><span style="font-family: League Spartan">"</span>CRSV<span style="font-family: League Spartan">"</span> 1</li>
+                  <li style="color: var(--text-color); list-style-position: inside;"><span style="font-family: League Spartan">"</span>SHRP<span style="font-family: League Spartan">"</span>100</li>
+                </ul>
+              </td>
+              <td class="gradient hiddenCell">
+                conic-gradient(from 0deg at 50% 50%, #00ffff, #3108ff, #ff0faf, #ff1327, #ff8b17, #ecff1b, #69ff1e, #26ffdb);
+              </td>
+            </tr>
+            <tr>
+              <td class="heading tableScale">
+                Heading
+              </td>
+              <td class="heading tableScale">
+                &lt;h2&gt;
+              </td>
+              <td class="heading tableScale">
+                Geologica
+              </td>
+              <td class="heading tableScale">
+                5.5vmax
+              </td>
+              <td class="heading tableScale">
+                750
+              </td>
+              <td class="fontSettings">
+                <ul style="margin-left:-50px">
+                  <li style="color: var(--text-color); list-style-position: inside;"><span style="font-family: League Spartan">"</span>slnt<span style="font-family: League Spartan">"</span> 0</li>
+                  <li style="color: var(--text-color); list-style-position: inside;"><span style="font-family: League Spartan">"</span>CRSV<span style="font-family: League Spartan">"</span> 1</li>
+                  <li style="color: var(--text-color); list-style-position: inside;"><span style="font-family: League Spartan">"</span>SHRP<span style="font-family: League Spartan">"</span>100</li>
+                </ul>
+              </td>
+              <td class="heading tableScale hiddenCell"></td>
+            </tr>
+            <tr>
+              <td class="subheading tableScale">
+                Subheading
+              </td>
+              <td class="subheading tableScale">
+                &lt;h3&gt;
+              </td>
+              <td class="subheading tableScale">
+                League Spartan
+              </td>
+              <td class="subheading tableScale">
+                4.5vmax
+              </td>
+              <td class="subheading tableScale">
+                650
+              </td>
+              <td class="fontSettings"></td>
+              <td class="gradient hiddenCell">
+                linear-gradient(135deg, #222222 0%, #808080 35%, #aaaaaa 50%, white 60%, #a9a9a9 80%)
+              </td>
+            </tr>
+            <tr>
+              <td class="text">
+                Body
+              </td>
+              <td class="text">
+                &lt;p&gt;
+              </td>
+              <td class="text">
+                Mona Sans
+              </td>
+              <td class="text">
+                1.75vmax
+              </td>
+              <td class="text">
+                400
+              </td>
+              <td class="fontSettings">
+                <ul>
+                  <li class="text" style="list-style-position:inside; margin-left: -70px">"wdth" 110</li>
+                </ul>
+              </td>
+              <td class="text tableScale hiddenCell"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="./resources/index.js""></script>
+  </body>
+</html>
