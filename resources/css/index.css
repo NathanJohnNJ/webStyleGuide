@@ -4,7 +4,6 @@
 @font-face {
   font-family: 'Geologica';
   src: url('./GeologicaVF.ttf') format('truetype');
-  font-style: normal;
 }
 /* FONTS END */
 /* ANGLE FOR CONIC GRADIENTS */
@@ -81,11 +80,8 @@ body{
 }
 h1, h2, h3, h4 {
   font-family: "Geologica", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:
-    "slnt" 0,
-    "CRSV" 1,
     "SHRP" 100;
   text-align: center;
   width: 100%;
@@ -103,25 +99,21 @@ h1, h2, h3, h4 {
 }
 .title{
   font-family: "Geologica", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
   font-variation-settings:
-    "slnt" 0,
-    "CRSV" 1,
     "SHRP" 100;
   font-weight: 900;
   font-size: 6vmax;
   /* background: conic-gradient( from var(--bg-angle) at 49% 5% in hsl longer hue, red, blue, red); */
 
-background: conic-gradient(from  var(--bg-angle) at 50% 50%, #00ffff, #3108ff, #ff0faf, #ff1327, #ff8b17, #ecff1b, #69ff1e, #26ffdb);
+background: conic-gradient(from  var(--bg-angle) at 50% 25%, #6afcfc, #785dfb, #f75c69, #abfa6b, #7afde7);
   color: dimgrey;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: 15px transparent;
   margin-bottom: 0px;
-  -moz-animation: rainbowAnimation 12s infinite linear forwards;
-  -webkit-animation: rainbowAnimation 12s infinite linear forwards;
-  animation: rainbowAnimation 12s infinite linear forwards;
+  -moz-animation: rainbowAnimation 20s infinite linear forwards;
+  -webkit-animation: rainbowAnimation 20s infinite linear forwards;
+  animation: rainbowAnimation 20s infinite linear forwards;
   margin:0;
   width: fit-content;
   letter-spacing: 3px;
@@ -138,8 +130,8 @@ background: conic-gradient(from  var(--bg-angle) at 50% 50%, #00ffff, #3108ff, #
   width: 250px;
   position: absolute;
   z-index: -99;
-  opacity: 0.8;
-  top:150px;
+  opacity: 0.5;
+  top:205px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -150,11 +142,12 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 90%;
 }
 section{
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
@@ -274,7 +267,8 @@ section{
 
 /* TABLE CSS */
 table{
-  width:100%;
+  width: max-content;
+  max-width:100%;
   height: fit-content;
   margin-bottom: 2.5vh;
   border: 2px solid var(--table-border);
@@ -285,16 +279,14 @@ table{
 }
 thead{            
   background-color: var(--header-bg);
-  padding: 20px;
+  padding: 16px;
   height: 40px;
 }
 th{
-  padding: 20px;
+  padding: 16px;
   font-weight: 570;
   font-family: "Geologica", sans-serif;
   font-variation-settings:
-    "slnt" 0,
-    "CRSV" 1,
     "SHRP" 100;
   white-space: nowrap;
   font-size: 2.5vmin;
@@ -311,10 +303,10 @@ th:nth-child(1){
 th:last-child{
   border-top-right-radius: 25px;
 }
-tr:nth-child(31) td:nth-child(1){
+#colorTable tr:nth-child(23) td:nth-child(1){
   border-bottom-left-radius: 25px;
 }
-tr:nth-child(31) td:last-child{
+#colorTable tr:nth-child(23) td:last-child{
   border-bottom-right-radius: 25px;
 }
 tr td:nth-child(1){
@@ -335,13 +327,17 @@ td{
 #colorTable td:hover{
   font-weight:600;
 }
+
+#highlightCell, #shadowCell{
+  width: 150px;
+}
 /*  END OF TABLE  */
 /* END OF COLOR SECTION */
 
 
 /* FONTS */
 #fontTable td:first-child{
-  min-width:400px
+  min-width:200px
 }
 .tableScale{
   transform: scale(0.7);
@@ -364,11 +360,7 @@ td{
 }
 #geo td ul li{
   font-family: "Geologica", sans-serif;
-  font-optical-sizing: auto; 
-  font-style: normal; 
   font-variation-settings:
-    "slnt" 0,
-    "CRSV" 1,
     "SHRP" 100;
   color: var(--text-color);
   margin-left: -35px;
@@ -396,8 +388,6 @@ td{
   font-family: "Geologica", sans-serif;
   font-size: 2.75vmax;
   font-variation-settings:
-    "slnt" 0,
-    "CRSV" 1,
     "SHRP" 100;
   color: var(--text-color); 
   animation: fontGrower 22s infinite linear forwards;
@@ -443,7 +433,7 @@ td{
 }
 #stylesTitle{
   display: flex;
-  margin-bottom:-20px;
+  margin-bottom:-80px;
 }
 #stylesBtn{
   height: fit-content;
@@ -452,7 +442,8 @@ td{
   color: var(--header-bg);
   font-weight: 700;
   font-size: 2vmax;
-  margin: 2.5vmax;
+  margin-top: 2.5vmax;
+  margin-left: 2.5vmax;
   padding: 10px 15px;
   border-radius: 25px;
   box-shadow: var(--small-shadow);
@@ -469,7 +460,9 @@ td{
 
 #textTable{
   margin-bottom: 100px;
-  width: 100%;
+  width: 90%;
+  max-width: 85vw;
+  scale: 0.95;
 }
 
 #textTable td ul li{

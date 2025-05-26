@@ -2,30 +2,6 @@
 module.exports={
   "colors": [
     {
-      "color": "purple",
-      "main": "#8a46c8ff",
-      "shades": {
-        "1": "#d9cdfcff",
-        "2": "#be9ff4ff",
-        "3": "#9b75e0ff",
-        "4": "#8140ccff",
-        "5": "#6326a0ff",
-        "6": "#491a7aff"
-      },
-      "complimentary": {
-        "1": "#c8a846ff",
-        "2": "#8ac846ff",
-        "3": "#46c88aff"
-      },
-      "contrasting": {
-        "1": "#c84b46ff",
-        "2": "#46a8c8ff",
-        "3": "#46c87eff"
-      },
-      "shadow": "#5b2f8aff",
-      "highlight": "#ccb6deff"
-    },
-    {
       "color": "blue",
       "main": "#3b78e6ff",
       "shades": {
@@ -37,14 +13,11 @@ module.exports={
         "6": "#1e44afff"
       },
       "complimentary": {
-        "1": "#e6953bff",
-        "2": "#e63b78ff",
-        "3": "#95e63bff"
-      },
-      "contrasting": {
-        "1": "#e63b3bff",
-        "2": "#3be6e3ff",
-        "3": "#78e63bff"
+        "1": "#fbaa78ff",
+        "2": "#f3864bff",
+        "3": "#e26d34ff",
+        "4": "#dc541aff",
+        "5": "#af481eff"
       },
       "shadow": "#2a569bff",
       "highlight": "#c0d7f9ff"
@@ -61,86 +34,32 @@ module.exports={
         "6": "#1a5b7aff"
       },
       "complimentary": {
-        "1": "#c4485fff",
-        "2": "#b9c448ff",
-        "3": "#c47848ff"
+        "1": "#e69e5fff",
+        "2": "#d88c48ff",
+        "3": "#cc7a32ff",
+        "4": "#a05f24ff",
+        "5": "#7a3f18ff"
       },
-      "contrasting": {
-        "1": "#c45748ff",
-        "2": "#c4a948ff",
-        "3": "#48c457ff"
-      },
-      "shadow": "#307f87ff",
-      "highlight": "#d0e5e8ff"
-    },
-    {
-      "color": "aquamarine",
-      "main": "#6ebfc9ff",
-      "shades": {
-        "1": "#d8f4f5ff",
-        "2": "#b6e7ebff",
-        "3": "#8dcfd3ff",
-        "4": "#83d5ddff",
-        "5": "#49b9c7ff",
-        "6": "#276877ff"
-      },
-      "complimentary": {
-        "1": "#c96e6eff",
-        "2": "#c99f6eff",
-        "3": "#bfc96eff"
-      },
-      "contrasting": {
-        "1": "#c96e91ff",
-        "2": "#bf916eff",
-        "3": "#6ec996ff"
-      },
-      "shadow": "#4a8086ff",
-      "highlight": "#c9e5e6ff"
-    },
-    {
-      "color": "keppel",
-      "main": "#58cabdff",
-      "shades": {
-        "1": "#d1f6efff",
-        "2": "#a4ebdfff",
-        "3": "#86d6c9ff",
-        "4": "#6edaccff",
-        "5": "#40c1b3ff",
-        "6": "#1b6a66ff"
-      },
-      "complimentary": {
-        "1": "#ca5f58ff",
-        "2": "#cabd58ff",
-        "3": "#a0ca58ff"
-      },
-      "contrasting": {
-        "1": "#ca587dff",
-        "2": "#58a6caff",
-        "3": "#75ca58ff"
-      },
-      "shadow": "#307f74ff",
-      "highlight": "#b8e4dfff"
+      "shadow": "#1a5b7aff",
+      "highlight": "#d8f4f5ff"
     },
     {
       "color": "green",
-      "main": "#66c366ff",
+      "main": "#11ce11ff",
       "shades": {
-        "1": "#cdfcccff",
-        "2": "#a8f3a7ff",
-        "3": "#89db8eff",
-        "4": "#75d977ff",
-        "5": "#50bc57ff",
-        "6": "#2b6e2eff"
+        "1": "#9ce99cff",
+        "2": "#6cd86cff",
+        "3": "#3fcf3fff",
+        "4": "#0aae0aff",
+        "5": "#088808ff",
+        "6": "#065906ff"
       },
       "complimentary": {
-        "1": "#c36666ff",
-        "2": "#c39b66ff",
-        "3": "#b3c366ff"
-      },
-      "contrasting": {
-        "1": "#c366a3ff",
-        "2": "#66a3c3ff",
-        "3": "#9bc36fff"
+        "1": "#d86c6cff",
+        "2": "#cf3f3fff",
+        "3": "#ae0a0aff",
+        "4": "#880808ff",
+        "5": "#590606ff"
       },
       "shadow": "#296229ff",
       "highlight": "#bee0beff"
@@ -157,14 +76,11 @@ module.exports={
         "6": "#198213ff"
       },
       "complimentary": {
-        "1": "#e06776ff",
-        "2": "#e0aa67ff",
-        "3": "#d7e067ff"
-      },
-      "contrasting": {
-        "1": "#e067a3ff",
-        "2": "#67e0a3ff",
-        "3": "#aae067ff"
+        "1": "#f8bfbfff",
+        "2": "#e99999ff",
+        "3": "#f1848bff",
+        "4": "#e05353ff",
+        "5": "#821919ff"
       },
       "shadow": "#316b2aff",
       "highlight": "#ddf9d8ff"
@@ -181,64 +97,35 @@ module.exports={
         "6": "#705500ff"
       },
       "complimentary": {
-        "1": "#1f94daff",
-        "2": "#1fdadaff",
-        "3": "#1fda94ff"
-      },
-      "contrasting": {
-        "1": "#da1f9cff",
-        "2": "#1fdac2ff",
-        "3": "#94da1fff"
+        "1": "#a698f7ff",
+        "2": "#8564f3ff",
+        "3": "#6b40e0ff",
+        "4": "#4d26c2ff",
+        "5": "#30178fff"
       },
       "shadow": "#997b19ff",
       "highlight": "#eae2c8ff"
-    },{
+    },
+    {
       "color": "sand",
       "main": "#ddb758ff",
       "shades": {
         "1": "#faf3c7ff",
         "2": "#f6e492ff",
-        "3": "#edce68ff",
+        "3": "#f5cd50ff",
         "4": "#eab625ff",
         "5": "#daa018ff",
         "6": "#7d4716ff"
       },
       "complimentary": {
-        "1": "#b85f2bff",
-        "2": "#82b82bff",
-        "3": "#4cb82bff"
-      },
-      "contrasting": {
-        "1": "#b82b5fff",
-        "2": "#2bb89bff",
-        "3": "#5fb82bff"
+        "1": "#9292f6ff",
+        "2": "#6868edff",
+        "3": "#4025eaff",
+        "4": "#2d18daff",
+        "5": "#1f1647ff"
       },
       "shadow": "#a17f3dff",
       "highlight": "#fbefd2ff"
-    },
-    {
-      "color": "champagne",
-      "main": "#e4a048ff",
-      "shades": {
-        "1": "#f9ebc8ff",
-        "2": "#f3d894ff",
-        "3": "#e8bd75ff",
-        "4": "#edbf5cff",
-        "5": "#e1881fff",
-        "6": "#834f08ff"
-      },
-      "complimentary": {
-        "1": "#487de4ff",
-        "2": "#4848e4ff",
-        "3": "#a048e4ff"
-      },
-      "contrasting": {
-        "1": "#e44848ff",
-        "2": "#e48848ff",
-        "3": "#e4e448ff"
-      },
-      "shadow": "#9f671bff",
-      "highlight": "#fbe0bcff"
     },
     {
       "color": "orange",
@@ -252,14 +139,11 @@ module.exports={
         "6": "#7a3a14ff"
       },
       "complimentary": {
-        "1": "#47b3eaff",
-        "2": "#4792eaff",
-        "3": "#4cea47ff"
-      },
-      "contrasting": {
-        "1": "#ea4747ff",
-        "2": "#47eaa8ff",
-        "3": "#92ea47ff"
+        "1": "#7ab3f4ff",
+        "2": "#5099e6ff",
+        "3": "#4491e6ff",
+        "4": "#1f6eccff",
+        "5": "#143a7aff"
       },
       "shadow": "#a75e2fff",
       "highlight": "#f9d9bfff"
@@ -268,73 +152,22 @@ module.exports={
       "color": "coral",
       "main": "#f86c41ff",
       "shades": {
-        "1": "#ffe9d5ff",
+        "1": "#fbe3daff",
         "2": "#fecfaaff",
-        "3": "#fbab80ff",
-        "4": "#fdac74ff",
-        "5": "#fb7f3cff",
+        "3": "#fdac74ff",
+        "4": "#fb884fff",
+        "5": "#f86c41ff",
         "6": "#c22f0cff"
       },
       "complimentary": {
-        "1": "#419ff8ff",
-        "2": "#4174f8ff",
-        "3": "#41f87aff"
-      },
-      "contrasting": {
-        "1": "#f84141ff",
-        "2": "#41f8bcff",
-        "3": "#9ff841ff"
+        "1": "#aacffeff",
+        "2": "#80abfbff",
+        "3": "#74acfdff",
+        "4": "#3c7ffbff",
+        "5": "#0c2fc2ff"
       },
       "shadow": "#b34e2cff",
-      "highlight": "#fbe3daff"
-    },
-    {
-      "color": "rose",
-      "main": "#e55a5aff",
-      "shades": {
-        "1": "#ffe0e0ff",
-        "2": "#ffc7c7ff",
-        "3": "#ffa3a3ff",
-        "4": "#ffa0a0ff",
-        "5": "#ff6969ff",
-        "6": "#c31212ff"
-      },
-      "complimentary": {
-        "1": "#5aa4e5ff",
-        "2": "#5ae5a4ff",
-        "3": "#a4e55aff"
-      },
-      "contrasting": {
-        "1": "#e55aa4ff",
-        "2": "#5ae5e5ff",
-        "3": "#a4e55aff"
-      },
-      "shadow": "#a03d3dff",
-      "highlight": "#fbc0c0ff"
-    },
-    {
-      "color": "pink",
-      "main": "#e7678dff",
-      "shades": {
-        "1": "#fccde2ff",
-        "2": "#f49fc5ff",
-        "3": "#e77ba8ff",
-        "4": "#e667a1ff",
-        "5": "#cc3c7eff",
-        "6": "#7a1944ff"
-      },
-      "complimentary": {
-        "1": "#67e7c2ff",
-        "2": "#67a1e7ff",
-        "3": "#67e767ff"
-      },
-      "contrasting": {
-        "1": "#e76767ff",
-        "2": "#67e7a1ff",
-        "3": "#e7c267ff"
-      },
-      "shadow": "#a14361ff",
-      "highlight": "#f9d3deff"
+      "highlight": "#ffe9d5ff"
     },
     {
       "color": "red",
@@ -348,17 +181,56 @@ module.exports={
         "6": "#7b1e1eff"
       },
       "complimentary": {
-        "1": "#52aad6ff",
-        "2": "#52d69dff",
-        "3": "#aad652ff"
-      },
-      "contrasting": {
-        "1": "#d652aaff",
-        "2": "#d6aa52ff",
-        "3": "#52d652ff"
+       "1": "#9dbb9dff",
+    "2": "#739b73ff",
+    "3": "#6e8f6eff",
+    "4": "#446e44ff",
+    "5": "#1e4a1eff"
       },
       "shadow": "#a13636ff",
       "highlight": "#fbe0e0ff"
+    },
+    {
+      "color": "pink",
+      "main": "#e7678dff",
+      "shades": {
+        "1": "#fccde2ff",
+        "2": "#f49fc5ff",
+        "3": "#e77ba8ff",
+        "4": "#e667a1ff",
+        "5": "#cc3c7eff",
+        "6": "#7a1944ff"
+      },
+      "complimentary": {
+        "1": "#b8e6c0ff",
+        "2": "#8ecda3ff",
+        "3": "#6bb48bff",
+        "4": "#4e9c75ff",
+        "5": "#387a5fff"
+      },
+      "shadow": "#a14361ff",
+      "highlight": "#f9d3deff"
+    },
+    {
+      "color": "purple",
+      "main": "#8a46c8ff",
+      "shades": {
+        "1": "#d9cdfcff",
+        "2": "#be9ff4ff",
+        "3": "#9b75e0ff",
+        "4": "#8140ccff",
+        "5": "#6326a0ff",
+        "6": "#491a7aff"
+      },
+      "complimentary": {
+        "1": "#f4e79fff",
+        "2": "#e0c975ff",
+        "3": "#ccab40ff",
+        "4": "#a08626ff",
+        "5": "#8c721fff"
+      },
+      "shadow": "#5b2f8aff",
+      "highlight": "#ccb6deff"
     },
     {
       "color": "grey",
@@ -372,23 +244,51 @@ module.exports={
         "6": "#3c3c3cff"
       },
       "complimentary": {
-        "1": "#b4b499ff",
+        "1": "#99b499ff",
         "2": "#9999b4ff",
-        "3": "#99b499ff"
-      },
-      "contrasting": {
-        "1": "#334d33ff",
-        "2": "#33334dff",
-        "3": "#4d3333ff"
+        "3": "#adad6dff",
+        "4": "#4a4a2aff",
+        "5": "#4d3333ff"
       },
       "shadow": "#333333ff",
       "highlight": "#ecececff"
     }
   ]
 }
+
 },{}],2:[function(require,module,exports){
 const table = document.getElementById('tableBody');
-const data = require('./colors.json');
+console.log(window.innerWidth)
+let data;
+async function changeSize(){
+  if (window.innerWidth >= 1100){
+    data = require('./colors.json');  
+    table.innerHTML = "";
+    drawTable(data);
+    document.getElementById("shadesHeading").colSpan = "6"
+    document.getElementById("lastHeader").style.borderTopRightRadius = '0px';
+    document.getElementById("lastHeader2").style.borderTopRightRadius = '0px';
+    document.getElementById("fVSHead").style.borderTopRightRadius= '0px';
+    Array.from(document.getElementsByClassName("fontWeight")).forEach((element)=> {
+      element.style.display = "table-cell"
+    });
+  } else {
+    data = require('./smallColors.json');
+    table.innerHTML = "";
+    drawTable(data);
+    document.getElementById("shadesHeading").colSpan = "3"
+    Array.from(document.getElementsByClassName("fontWeight")).forEach((element)=> {
+      element.style.display = "none"
+    });
+    document.getElementById("lastHeader").style.borderTopRightRadius = '25px';
+    document.getElementById("lastHeader2").style.borderTopRightRadius = '25px';
+  }
+  return window.removeEventListener('resize', ()=>changeSize())
+}
+window.addEventListener('resize', ()=>changeSize())
+changeSize();
+
+
 let type = "hex";
 let alpha = 1;
 
@@ -430,7 +330,7 @@ function changeTable(){
     root.style.setProperty('--hidden-cell', 'none')
   }
 }
-
+function drawTable(data){
 data.colors.map((color, i) => {
   const row = document.createElement('tr');
   const row2 = document.createElement('tr');
@@ -442,8 +342,8 @@ data.colors.map((color, i) => {
   cell.innerText = color.main;
   cell.setAttribute('id', 'mainColor');
   cell.style.color = 'transparent';
-  cell.style.minWidth = '25px';
-  cell.style.maxWidth = '25px';
+  cell.style.minWidth = '15px';
+  cell.style.maxWidth = '15px';
   cell.title = color.main;
   cell.rowSpan = 2;
   const cell2 = document.createElement('td');
@@ -454,15 +354,31 @@ data.colors.map((color, i) => {
   cell2.style.fontWeight = 700;
   cell2.innerText = color.color.toUpperCase();
   cell2.style.height = "35px";
+  cell2.style.minWidth = '45px';
+  cell2.style.maxWidth = '45px';
   cell2.setAttribute('id', 'textColor1');
   cell2.classList.add('coloredText');
   cell3.style.color = `${color.main}`;
   cell3.style.fontWeight = 700;
   cell3.innerText = color.main;
   cell3.style.height = "35px";
+  cell3.style.minWidth = '45px';
+  cell3.style.maxWidth = '45px';
   cell3.setAttribute('id', 'textColor2');
   cell3.classList.add('coloredText');
   cell3.addEventListener('click', (e) => copyFunction(e));
+  const highlightCell = document.createElement('td');
+  row.appendChild(highlightCell);
+  highlightCell.style.backgroundColor = color.highlight;
+  highlightCell.title = color.highlight;
+  // highlightCell.style.width = 'min-content';
+  highlightCell.innerText = color.highlight;
+  highlightCell.style.textAlign = 'center';
+  highlightCell.style.color = "#000000";
+  highlightCell.addEventListener('click', (e) => copyFunction(e));
+  highlightCell.rowSpan = 2;
+  highlightCell.style.height = "70px";
+  highlightCell.setAttribute('id', 'highlightCell');
   Object.entries(color.shades).map((shade, i)=>{
     const cell = document.createElement('td');
     row.appendChild(cell);
@@ -502,6 +418,18 @@ data.colors.map((color, i) => {
       cell.style.fontSize = "0px";
     });
   });
+
+  const shadowCell = document.createElement('td');
+  row.appendChild(shadowCell);
+  shadowCell.style.backgroundColor = color.shadow;
+  shadowCell.title = color.shadow;
+  // shadowCell.style.width = 'min-content';
+  shadowCell.innerText = color.shadow;
+  shadowCell.style.textAlign = 'center';
+  shadowCell.addEventListener('click', (e) => copyFunction(e));
+  shadowCell.rowSpan = 2;
+  shadowCell.style.height = "70px";
+  shadowCell.setAttribute('id', 'shadowCell');
   Object.entries(color.complimentary).map((shade, i) => {
     const cell = document.createElement('td');
     row.appendChild(cell);
@@ -514,41 +442,9 @@ data.colors.map((color, i) => {
     cell.rowSpan = 2;
     cell.style.height = "70px";
   });
-  Object.entries(color.contrasting).map((shade, i) => {
-    const cell = document.createElement('td');
-    row.appendChild(cell);
-    cell.style.backgroundColor = shade[1];
-    cell.title = shade[1];
-    cell.style.width = 'min-content';
-    cell.innerText = shade[1];
-    cell.style.textAlign = 'center';
-    cell.addEventListener('click', (e) => copyFunction(e));
-    cell.rowSpan = 2;
-    cell.style.height = "70px";
-  });
-  const shadowCell = document.createElement('td');
-  row.appendChild(shadowCell);
-  shadowCell.style.backgroundColor = color.shadow;
-  shadowCell.title = color.shadow;
-  shadowCell.style.width = 'min-content';
-  shadowCell.innerText = color.shadow;
-  shadowCell.style.textAlign = 'center';
-  shadowCell.addEventListener('click', (e) => copyFunction(e));
-  shadowCell.rowSpan = 2;
-  shadowCell.style.height = "70px";
-  const highlightCell = document.createElement('td');
-  row.appendChild(highlightCell);
-  highlightCell.style.backgroundColor = color.highlight;
-  highlightCell.title = color.highlight;
-  highlightCell.style.width = 'min-content';
-  highlightCell.innerText = color.highlight;
-  highlightCell.style.textAlign = 'center';
-  highlightCell.style.color = "#000000";
-  highlightCell.addEventListener('click', (e) => copyFunction(e));
-  highlightCell.rowSpan = 2;
-  highlightCell.style.height = "70px";
+  
 })
-
+}
 function rgbaToHex(rgbaString) {
   // Extract the RGBA values using a regular expression
   const match = rgbaString.match(/rgba\((\d+),\s*(\d+),\s*(\d+),\s*([\d.]+)\)/);
@@ -641,4 +537,202 @@ function updateOpacity(alpha){
 //   console.log('hsla')
 // }
 
-},{"./colors.json":1}]},{},[2]);
+},{"./colors.json":1,"./smallColors.json":3}],3:[function(require,module,exports){
+module.exports={
+  "colors": [
+    {
+      "color": "blue",
+      "main": "#3b78e6ff",
+      "shades": {
+        "1": "#a0b2ffff",
+        "2": "#4b77f3ff",
+        "3": "#1e44afff"
+      },
+      "complimentary": {
+        "1": "#fbaa78ff",
+        "2": "#e26d34ff",
+        "3": "#af481eff"
+      },
+      "shadow": "#2a569bff",
+      "highlight": "#c0d7f9ff"
+    },
+    {
+      "color": "teal",
+      "main": "#48b9c4ff",
+      "shades": {
+        "1": "#b1e8fbff",
+        "2": "#5fc4e6ff",
+        "3": "#247fa0ff"
+      },
+      "complimentary": {
+        "1": "#e69e5fff",
+        "2": "#cc7a32ff",
+        "3": "#7a3f18ff"
+      },
+      "shadow": "#1a5b7aff",
+      "highlight": "#d8f4f5ff"
+    },
+    {
+      "color": "green",
+      "main": "#11ce11ff",
+      "shades": {
+        "1": "#9ce99cff",
+        "2": "#3fcf3fff",
+        "3": "#065906ff"
+      },
+      "complimentary": {
+        "1": "#d86c6cff",
+        "2": "#ae0a0aff",
+        "3": "#590606ff"
+      },
+      "shadow": "#296229ff",
+      "highlight": "#bee0beff"
+    },
+    {
+      "color": "apple",
+      "main": "#76e067ff",
+      "shades": {
+        "1": "#defddbff",
+        "2": "#8bf184ff",
+        "3": "#198213ff"
+      },
+      "complimentary": {
+        "1": "#f8bfbfff",
+        "2": "#f1848bff",
+        "3": "#821919ff"
+      },
+      "shadow": "#316b2aff",
+      "highlight": "#ddf9d8ff"
+    },
+    {
+      "color": "yellow",
+      "main": "#dab21fff",
+      "shades": {
+        "1": "#f3e7b2ff",
+        "2": "#f5cd50ff",
+        "3": "#705500ff"
+      },
+      "complimentary": {
+        "1": "#a698f7ff",
+        "2": "#6b40e0ff",
+        "3": "#30178fff"
+      },
+      "shadow": "#997b19ff",
+      "highlight": "#eae2c8ff"
+    },
+    {
+      "color": "sand",
+      "main": "#ddb758ff",
+      "shades": {
+        "1": "#faf3c7ff",
+        "2": "#eab625ff",
+        "3": "#7d4716ff"
+      },
+      "complimentary": {
+        "1": "#9292f6ff",
+        "2": "#4025eaff",
+        "3": "#1f1647ff"
+      },
+      "shadow": "#a17f3dff",
+      "highlight": "#fbefd2ff"
+    },
+    {
+      "color": "orange",
+      "main": "#ea8f47ff",
+      "shades": {
+        "1": "#fcd8b0ff",
+        "2": "#e69950ff",
+        "3": "#7a3a14ff"
+      },
+      "complimentary": {
+        "1": "#7ab3f4ff",
+        "2": "#4491e6ff",
+        "3": "#143a7aff"
+      },
+      "shadow": "#a75e2fff",
+      "highlight": "#f9d9bfff"
+    },
+    {
+      "color": "coral",
+      "main": "#f86c41ff",
+      "shades": {
+        "1": "#fbe3daff",
+        "2": "#fdac74ff",
+        "3": "#c22f0cff"
+      },
+      "complimentary": {
+        "1": "#aacffeff",
+        "2": "#74acfdff",
+        "3": "#0c2fc2ff"
+      },
+      "shadow": "#b34e2cff",
+      "highlight": "#ffe9d5ff"
+    },
+    {
+      "color": "red",
+      "main": "#d65252ff",
+      "shades": {
+        "1": "#fcccccff",
+        "2": "#e57373ff",
+        "3": "#7b1e1eff"
+      },
+      "complimentary": {
+        "1": "#9dbb9dff",
+        "2": "#6e8f6eff",
+        "3": "#1e4a1eff"
+      },
+      "shadow": "#a13636ff",
+      "highlight": "#fbe0e0ff"
+    },
+    {
+      "color": "pink",
+      "main": "#e7678dff",
+      "shades": {
+        "1": "#fccde2ff",
+        "2": "#e667a1ff",
+        "3": "#7a1944ff"
+      },
+      "complimentary": {
+        "1": "#b8e6c0ff",
+        "2": "#6bb48bff",
+        "3": "#387a5fff"
+      },
+      "shadow": "#a14361ff",
+      "highlight": "#f9d3deff"
+    },
+    {
+      "color": "purple",
+      "main": "#8a46c8ff",
+      "shades": {
+        "1": "#d9cdfcff",
+        "2": "#be9ff4ff",
+        "3": "#491a7aff"
+      },
+      "complimentary": {
+        "1": "#f4e79fff",
+        "2": "#e0c975ff",
+        "3": "#8c721fff"
+      },
+      "shadow": "#5b2f8aff",
+      "highlight": "#ccb6deff"
+    },
+    {
+      "color": "grey",
+      "main": "#999999ff",
+      "shades": {
+        "1": "#d2d2d2ff",
+        "2": "#b4b4b4ff",
+        "3": "#3c3c3cff"
+      },
+      "complimentary": {
+        "1": "#99b499ff",
+        "2": "#adad6dff",
+        "3": "#4d3333ff"
+      },
+      "shadow": "#333333ff",
+      "highlight": "#ecececff"
+    }
+  ]
+}
+
+},{}]},{},[2]);

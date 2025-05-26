@@ -1,0 +1,196 @@
+{
+  "colors": [
+    {
+      "color": "blue",
+      "main": "#3b78e6ff",
+      "shades": {
+        "1": "#a0b2ffff",
+        "2": "#4b77f3ff",
+        "3": "#1e44afff"
+      },
+      "complimentary": {
+        "1": "#fbaa78ff",
+        "2": "#e26d34ff",
+        "3": "#af481eff"
+      },
+      "shadow": "#2a569bff",
+      "highlight": "#c0d7f9ff"
+    },
+    {
+      "color": "teal",
+      "main": "#48b9c4ff",
+      "shades": {
+        "1": "#b1e8fbff",
+        "2": "#5fc4e6ff",
+        "3": "#247fa0ff"
+      },
+      "complimentary": {
+        "1": "#e69e5fff",
+        "2": "#cc7a32ff",
+        "3": "#7a3f18ff"
+      },
+      "shadow": "#1a5b7aff",
+      "highlight": "#d8f4f5ff"
+    },
+    {
+      "color": "green",
+      "main": "#11ce11ff",
+      "shades": {
+        "1": "#9ce99cff",
+        "2": "#3fcf3fff",
+        "3": "#065906ff"
+      },
+      "complimentary": {
+        "1": "#d86c6cff",
+        "2": "#ae0a0aff",
+        "3": "#590606ff"
+      },
+      "shadow": "#296229ff",
+      "highlight": "#bee0beff"
+    },
+    {
+      "color": "apple",
+      "main": "#76e067ff",
+      "shades": {
+        "1": "#defddbff",
+        "2": "#8bf184ff",
+        "3": "#198213ff"
+      },
+      "complimentary": {
+        "1": "#f8bfbfff",
+        "2": "#f1848bff",
+        "3": "#821919ff"
+      },
+      "shadow": "#316b2aff",
+      "highlight": "#ddf9d8ff"
+    },
+    {
+      "color": "yellow",
+      "main": "#dab21fff",
+      "shades": {
+        "1": "#f3e7b2ff",
+        "2": "#f5cd50ff",
+        "3": "#705500ff"
+      },
+      "complimentary": {
+        "1": "#a698f7ff",
+        "2": "#6b40e0ff",
+        "3": "#30178fff"
+      },
+      "shadow": "#997b19ff",
+      "highlight": "#eae2c8ff"
+    },
+    {
+      "color": "sand",
+      "main": "#ddb758ff",
+      "shades": {
+        "1": "#faf3c7ff",
+        "2": "#eab625ff",
+        "3": "#7d4716ff"
+      },
+      "complimentary": {
+        "1": "#9292f6ff",
+        "2": "#4025eaff",
+        "3": "#1f1647ff"
+      },
+      "shadow": "#a17f3dff",
+      "highlight": "#fbefd2ff"
+    },
+    {
+      "color": "orange",
+      "main": "#ea8f47ff",
+      "shades": {
+        "1": "#fcd8b0ff",
+        "2": "#e69950ff",
+        "3": "#7a3a14ff"
+      },
+      "complimentary": {
+        "1": "#7ab3f4ff",
+        "2": "#4491e6ff",
+        "3": "#143a7aff"
+      },
+      "shadow": "#a75e2fff",
+      "highlight": "#f9d9bfff"
+    },
+    {
+      "color": "coral",
+      "main": "#f86c41ff",
+      "shades": {
+        "1": "#fbe3daff",
+        "2": "#fdac74ff",
+        "3": "#c22f0cff"
+      },
+      "complimentary": {
+        "1": "#aacffeff",
+        "2": "#74acfdff",
+        "3": "#0c2fc2ff"
+      },
+      "shadow": "#b34e2cff",
+      "highlight": "#ffe9d5ff"
+    },
+    {
+      "color": "red",
+      "main": "#d65252ff",
+      "shades": {
+        "1": "#fcccccff",
+        "2": "#e57373ff",
+        "3": "#7b1e1eff"
+      },
+      "complimentary": {
+        "1": "#9dbb9dff",
+        "2": "#6e8f6eff",
+        "3": "#1e4a1eff"
+      },
+      "shadow": "#a13636ff",
+      "highlight": "#fbe0e0ff"
+    },
+    {
+      "color": "pink",
+      "main": "#e7678dff",
+      "shades": {
+        "1": "#fccde2ff",
+        "2": "#e667a1ff",
+        "3": "#7a1944ff"
+      },
+      "complimentary": {
+        "1": "#b8e6c0ff",
+        "2": "#6bb48bff",
+        "3": "#387a5fff"
+      },
+      "shadow": "#a14361ff",
+      "highlight": "#f9d3deff"
+    },
+    {
+      "color": "purple",
+      "main": "#8a46c8ff",
+      "shades": {
+        "1": "#d9cdfcff",
+        "2": "#be9ff4ff",
+        "3": "#491a7aff"
+      },
+      "complimentary": {
+        "1": "#f4e79fff",
+        "2": "#e0c975ff",
+        "3": "#8c721fff"
+      },
+      "shadow": "#5b2f8aff",
+      "highlight": "#ccb6deff"
+    },
+    {
+      "color": "grey",
+      "main": "#999999ff",
+      "shades": {
+        "1": "#d2d2d2ff",
+        "2": "#b4b4b4ff",
+        "3": "#3c3c3cff"
+      },
+      "complimentary": {
+        "1": "#99b499ff",
+        "2": "#adad6dff",
+        "3": "#4d3333ff"
+      },
+      "shadow": "#333333ff",
+      "highlight": "#ecececff"
+    }
+  ]
+}

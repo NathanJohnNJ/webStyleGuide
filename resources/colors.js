@@ -1,5 +1,35 @@
 const table = document.getElementById('tableBody');
-const data = require('./colors.json');
+console.log(window.innerWidth)
+let data;
+async function changeSize(){
+  if (window.innerWidth >= 1100){
+    data = require('./colors.json');  
+    table.innerHTML = "";
+    drawTable(data);
+    document.getElementById("shadesHeading").colSpan = "6"
+    document.getElementById("lastHeader").style.borderTopRightRadius = '0px';
+    document.getElementById("lastHeader2").style.borderTopRightRadius = '0px';
+    document.getElementById("fVSHead").style.borderTopRightRadius= '0px';
+    Array.from(document.getElementsByClassName("fontWeight")).forEach((element)=> {
+      element.style.display = "table-cell"
+    });
+  } else {
+    data = require('./smallColors.json');
+    table.innerHTML = "";
+    drawTable(data);
+    document.getElementById("shadesHeading").colSpan = "3"
+    Array.from(document.getElementsByClassName("fontWeight")).forEach((element)=> {
+      element.style.display = "none"
+    });
+    document.getElementById("lastHeader").style.borderTopRightRadius = '25px';
+    document.getElementById("lastHeader2").style.borderTopRightRadius = '25px';
+  }
+  return window.removeEventListener('resize', ()=>changeSize())
+}
+window.addEventListener('resize', ()=>changeSize())
+changeSize();
+
+
 let type = "hex";
 let alpha = 1;
 
@@ -41,7 +71,7 @@ function changeTable(){
     root.style.setProperty('--hidden-cell', 'none')
   }
 }
-
+function drawTable(data){
 data.colors.map((color, i) => {
   const row = document.createElement('tr');
   const row2 = document.createElement('tr');
@@ -53,8 +83,8 @@ data.colors.map((color, i) => {
   cell.innerText = color.main;
   cell.setAttribute('id', 'mainColor');
   cell.style.color = 'transparent';
-  cell.style.minWidth = '25px';
-  cell.style.maxWidth = '25px';
+  cell.style.minWidth = '15px';
+  cell.style.maxWidth = '15px';
   cell.title = color.main;
   cell.rowSpan = 2;
   const cell2 = document.createElement('td');
@@ -65,15 +95,31 @@ data.colors.map((color, i) => {
   cell2.style.fontWeight = 700;
   cell2.innerText = color.color.toUpperCase();
   cell2.style.height = "35px";
+  cell2.style.minWidth = '45px';
+  cell2.style.maxWidth = '45px';
   cell2.setAttribute('id', 'textColor1');
   cell2.classList.add('coloredText');
   cell3.style.color = `${color.main}`;
   cell3.style.fontWeight = 700;
   cell3.innerText = color.main;
   cell3.style.height = "35px";
+  cell3.style.minWidth = '45px';
+  cell3.style.maxWidth = '45px';
   cell3.setAttribute('id', 'textColor2');
   cell3.classList.add('coloredText');
   cell3.addEventListener('click', (e) => copyFunction(e));
+  const highlightCell = document.createElement('td');
+  row.appendChild(highlightCell);
+  highlightCell.style.backgroundColor = color.highlight;
+  highlightCell.title = color.highlight;
+  // highlightCell.style.width = 'min-content';
+  highlightCell.innerText = color.highlight;
+  highlightCell.style.textAlign = 'center';
+  highlightCell.style.color = "#000000";
+  highlightCell.addEventListener('click', (e) => copyFunction(e));
+  highlightCell.rowSpan = 2;
+  highlightCell.style.height = "70px";
+  highlightCell.setAttribute('id', 'highlightCell');
   Object.entries(color.shades).map((shade, i)=>{
     const cell = document.createElement('td');
     row.appendChild(cell);
@@ -113,6 +159,18 @@ data.colors.map((color, i) => {
       cell.style.fontSize = "0px";
     });
   });
+
+  const shadowCell = document.createElement('td');
+  row.appendChild(shadowCell);
+  shadowCell.style.backgroundColor = color.shadow;
+  shadowCell.title = color.shadow;
+  // shadowCell.style.width = 'min-content';
+  shadowCell.innerText = color.shadow;
+  shadowCell.style.textAlign = 'center';
+  shadowCell.addEventListener('click', (e) => copyFunction(e));
+  shadowCell.rowSpan = 2;
+  shadowCell.style.height = "70px";
+  shadowCell.setAttribute('id', 'shadowCell');
   Object.entries(color.complimentary).map((shade, i) => {
     const cell = document.createElement('td');
     row.appendChild(cell);
@@ -125,41 +183,9 @@ data.colors.map((color, i) => {
     cell.rowSpan = 2;
     cell.style.height = "70px";
   });
-  Object.entries(color.contrasting).map((shade, i) => {
-    const cell = document.createElement('td');
-    row.appendChild(cell);
-    cell.style.backgroundColor = shade[1];
-    cell.title = shade[1];
-    cell.style.width = 'min-content';
-    cell.innerText = shade[1];
-    cell.style.textAlign = 'center';
-    cell.addEventListener('click', (e) => copyFunction(e));
-    cell.rowSpan = 2;
-    cell.style.height = "70px";
-  });
-  const shadowCell = document.createElement('td');
-  row.appendChild(shadowCell);
-  shadowCell.style.backgroundColor = color.shadow;
-  shadowCell.title = color.shadow;
-  shadowCell.style.width = 'min-content';
-  shadowCell.innerText = color.shadow;
-  shadowCell.style.textAlign = 'center';
-  shadowCell.addEventListener('click', (e) => copyFunction(e));
-  shadowCell.rowSpan = 2;
-  shadowCell.style.height = "70px";
-  const highlightCell = document.createElement('td');
-  row.appendChild(highlightCell);
-  highlightCell.style.backgroundColor = color.highlight;
-  highlightCell.title = color.highlight;
-  highlightCell.style.width = 'min-content';
-  highlightCell.innerText = color.highlight;
-  highlightCell.style.textAlign = 'center';
-  highlightCell.style.color = "#000000";
-  highlightCell.addEventListener('click', (e) => copyFunction(e));
-  highlightCell.rowSpan = 2;
-  highlightCell.style.height = "70px";
+  
 })
-
+}
 function rgbaToHex(rgbaString) {
   // Extract the RGBA values using a regular expression
   const match = rgbaString.match(/rgba\((\d+),\s*(\d+),\s*(\d+),\s*([\d.]+)\)/);
