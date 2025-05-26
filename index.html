@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="icon" type="image/x-icon" href="./resources/images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="./resources/css/index.css" />
     <title>Website Style Guide</title>
   </head>
@@ -13,7 +14,7 @@
       </h1>
       <h2 class="heading">For Codecademy Full-Stack Developer Course</h2>
       <h3 class="heading">- By Nathan John -</h3>
-      <a href="https://www.njtd.xyz" target="_blank"><img class="logo" alt="NJTD Logo" src="./resources/images/logo.rainbow.png" /></a>
+      <a href="https://www.njtd.xyz" target="_blank"><img class="logo" alt="NJTD Logo" src="./resources/images/rainbowLogo.png" /></a>
     </header>
     <main>
       <section id="colors">
@@ -53,11 +54,10 @@
           <thead>
             <tr id="headings">
               <th colspan="2">Main Colour</th>
-              <th colspan="6">Light to Dark</th>
-              <th colspan="3">Complimentary Colours</th>
-              <th colspan="3">Contrasting Colours</th>
-              <th>Shadow</th>
               <th>Highlight</th>
+              <th colspan="6" id="shadesHeading">Light to Dark</th>
+              <th>Shadow</th>
+              <th colspan="6">Complimentary Colours</th>
             </tr>
           </thead>
           <tbody id="tableBody">
@@ -71,8 +71,8 @@
             <tr id="headings">
               <th>Font-Family</th>
               <th>CSS Options</th>
-              <th>Font-Variation<br>-Settings</th>
-              <th colspan="2">Font-Weight</th>
+              <th id="lastHeader2">Font-Variation<br>-Settings</th>
+              <th colspan="2" class="fontWeight">Font-Weight</th>
             </tr>
           </thead>
           <tbody id="tableBody">
@@ -93,7 +93,7 @@
                   <li><span style="font-family: League Spartan">"</span>SHRP<span style="font-family: League Spartan">"</span> 0 - 100</li>
                 </ul>
               </td>
-              <td>
+              <td class="fontWeight">
                 <ul>
                   <li style="font-weight:100;white-space:nowrap">100 - Thin</li>
                   <li style="font-weight:200;white-space:nowrap">200 - Extra Light</li>
@@ -102,7 +102,7 @@
                   <li style="font-weight:500;white-space:nowrap">500 - Medium</li>
                 </ul>
               </td>
-              <td>
+              <td class="fontWeight">
                 <ul>
                   <li style="font-weight:600;white-space:nowrap">600 - Semi Bold</li>
                   <li style="font-weight:700;white-space:nowrap">700 - Bold</li>
@@ -123,7 +123,7 @@
               </td>
               <td>
               </td>
-              <td>
+              <td class="fontWeight">
                 <ul>
                   <li style="font-weight:100;white-space:nowrap">100 - Thin</li>
                   <li style="font-weight:200;white-space:nowrap">200 - Extra Light</li>
@@ -132,7 +132,7 @@
                   <li style="font-weight:500;white-space:nowrap">500 - Medium</li>
                 </ul>
               </td>
-              <td>
+              <td class="fontWeight">
                 <ul>
                   <li style="font-weight:600;white-space:nowrap">600 - Semi Bold</li>
                   <li style="font-weight:700;white-space:nowrap">700 - Bold</li>
@@ -156,7 +156,7 @@
                   <li>"wdth" 75 - 125,</li>
                 </ul>
               </td>
-              <td>
+              <td class="fontWeight">
                 <ul>
                   <li style="font-weight:200;white-space:nowrap">200 - Extra Light</li>
                   <li style="font-weight:300;white-space:nowrap">300 - Light</li>
@@ -164,7 +164,7 @@
                   <li style="font-weight:500;white-space:nowrap">500 - Medium</li>
                 </ul>
               </td>
-              <td>
+              <td class="fontWeight">
                 <ul>
                   <li style="font-weight:600;white-space:nowrap">600 - Semi Bold</li>
                   <li style="font-weight:700;white-space:nowrap">700 - Bold</li>
@@ -180,18 +180,18 @@
       <section id="textStyles">
         <div id="stylesTitle">
           <h3 class="subheading">Text-Styles</h3>
-          <button id="stylesBtn">Show Gradients</button>
+          <button id="stylesBtn" class="fontWeight">Show Gradients</button>
         </div>
         <table class="tableScale" id="textTable">
           <thead>
-            <tr id="headings">
+            <tr id="textTableHeadings">
               <th>Style/Class</th>
               <th>Element</th>
               <th>Font-Family</th>
-              <th>Font-Size</th>
-              <th>Font-Weight</th>
-              <th class="fontSettings">Font-Variation<br>-Settings</th>
-              <th class="hiddenCell">Gradient Used</th>
+              <th id="lastHeader">Font-Size</th>
+              <th class="fontWeight">Font-Weight</th>
+              <th class="fontSettings fontWeight" id="fVSHead">Font-Variation<br>-Settings</th>
+              <th class="hiddenCell fontWeight">Gradient Used</th>
             </tr>
           </thead>
           <tbody id="tableBody">
@@ -208,17 +208,17 @@
               <td class="title tableScale">
                 6vmax
               </td>
-              <td class="title tableScale" style="font-weight: 900">
+              <td class="title tableScale fontWeight" style="font-weight: 900">
                 900
               </td>
-              <td class="fontSettings">
+              <td class="fontSettings fontWeight">
                 <ul style="margin-left:-50px">
                   <li style="color: var(--text-color); list-style-position: inside;"><span style="font-family: League Spartan">"</span>slnt<span style="font-family: League Spartan">"</span> 0</li>
                   <li style="color: var(--text-color); list-style-position: inside;"><span style="font-family: League Spartan">"</span>CRSV<span style="font-family: League Spartan">"</span> 1</li>
                   <li style="color: var(--text-color); list-style-position: inside;"><span style="font-family: League Spartan">"</span>SHRP<span style="font-family: League Spartan">"</span>100</li>
                 </ul>
               </td>
-              <td class="gradient hiddenCell">
+              <td class="gradient hiddenCell fontWeight">
                 conic-gradient(from 0deg at 50% 50%, #00ffff, #3108ff, #ff0faf, #ff1327, #ff8b17, #ecff1b, #69ff1e, #26ffdb);
               </td>
             </tr>
@@ -235,17 +235,17 @@
               <td class="heading tableScale">
                 5.5vmax
               </td>
-              <td class="heading tableScale">
+              <td class="heading tableScale fontWeight">
                 750
               </td>
-              <td class="fontSettings">
+              <td class="fontSettings fontWeight">
                 <ul style="margin-left:-50px">
                   <li style="color: var(--text-color); list-style-position: inside;"><span style="font-family: League Spartan">"</span>slnt<span style="font-family: League Spartan">"</span> 0</li>
                   <li style="color: var(--text-color); list-style-position: inside;"><span style="font-family: League Spartan">"</span>CRSV<span style="font-family: League Spartan">"</span> 1</li>
                   <li style="color: var(--text-color); list-style-position: inside;"><span style="font-family: League Spartan">"</span>SHRP<span style="font-family: League Spartan">"</span>100</li>
                 </ul>
               </td>
-              <td class="heading tableScale hiddenCell"></td>
+              <td class="heading tableScale hiddenCell fontWeight"></td>
             </tr>
             <tr>
               <td class="subheading tableScale">
@@ -260,11 +260,11 @@
               <td class="subheading tableScale">
                 4.5vmax
               </td>
-              <td class="subheading tableScale">
+              <td class="subheading tableScale fontWeight">
                 650
               </td>
-              <td class="fontSettings"></td>
-              <td class="gradient hiddenCell">
+              <td class="fontSettings fontWeight"></td>
+              <td class="gradient hiddenCell fontWeight">
                 linear-gradient(135deg, #222222 0%, #808080 35%, #aaaaaa 50%, white 60%, #a9a9a9 80%)
               </td>
             </tr>
@@ -281,20 +281,20 @@
               <td class="text">
                 1.75vmax
               </td>
-              <td class="text">
+              <td class="text fontWeight">
                 400
               </td>
-              <td class="fontSettings">
+              <td class="fontSettings fontWeight">
                 <ul>
                   <li class="text" style="list-style-position:inside; margin-left: -70px">"wdth" 110</li>
                 </ul>
               </td>
-              <td class="text tableScale hiddenCell"></td>
+              <td class="text tableScale hiddenCell fontWeight"></td>
             </tr>
           </tbody>
         </table>
       </section>
     </main>
-    <script src="./resources/index.js""></script>
+    <script src="./resources/index.js"></script>
   </body>
 </html>
