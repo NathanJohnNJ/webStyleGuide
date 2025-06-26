@@ -343,12 +343,7 @@ td{
   transform: scale(0.7);
 }
 
-.fontSettings{
-  display: var(--font-settings);
-}
-.hiddenCell{
-  display: var(--hidden-cell);
-}
+
 .typeFace{
   display: flex;
   flex-direction: column;
@@ -463,6 +458,12 @@ td{
   width: 90%;
   max-width: 85vw;
   scale: 0.95;
+}
+.fontSettings{
+  display: var(--font-settings);
+}
+.hiddenCell{
+  display: var(--hidden-cell);
 }
 
 #textTable td ul li{
